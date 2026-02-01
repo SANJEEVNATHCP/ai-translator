@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Voice Translator - Republic Day 2026 🇮🇳</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'saffron': '#FF9933',
+                        'india-green': '#138808',
+                        'navy-blue': '#000080',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f9fafb;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --border-color: #e5e7eb;
+            --saffron: #FF9933;
+            --green: #138808;
+            --navy: #000080;
+        }
+        
+        /* Premium Dark Mode */
+        [data-theme="dark"] {
+            --bg-primary: #1e1e2e;
+            --bg-secondary: #181825;
+            --text-primary: #cdd6f4;
+            --text-secondary: #a6adc8;
+            --border-color: #45475a;
+        }
+        
+        [data-theme="dark"] body {
+            background: #11111b !important;
+        }
+        
+        [data-theme="dark"] .bg-white {
+            background-color: #1e1e2e !important;
+            color: #cdd6f4;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        [data-theme="dark"] .bg-gray-100 {
+            background-color: #313244 !important;
+            color: #cdd6f4;
+        }
+        
+        [data-theme="dark"] .bg-gray-50 {
+            background-color: #181825 !important;
+        }
+        
+        [data-theme="dark"] .text-gray-700,
+        [data-theme="dark"] .text-gray-600,
+        [data-theme="dark"] .text-gray-900 {
+            color: #cdd6f4 !important;
+        }
+        
+        [data-theme="dark"] .text-gray-500 {
+            color: #a6adc8 !important;
+        }
+        
+        [data-theme="dark"] .text-gray-400 {
+            color: #7f849c !important;
+        }
+        
+        [data-theme="dark"] .border-gray-200,
+        [data-theme="dark"] .border-gray-300 {
+            border-color: #45475a !important;
+        }
+        
+        [data-theme="dark"] input,
+        [data-theme="dark"] select,
+        [data-theme="dark"] textarea {
+            background-color: #181825 !important;
+            color: #cdd6f4 !important;
+            border-color: #45475a !important;
+        }
+        
+        [data-theme="dark"] input:focus,
+        [data-theme="dark"] select:focus,
+        [data-theme="dark"] textarea:focus {
+            border-color: #89b4fa !important;
+        }
+        
+        [data-theme="dark"] input::placeholder,
+        [data-theme="dark"] textarea::placeholder {
+            color: #6c7086 !important;
+        }
+        
+        [data-theme="dark"] .ashoka-wheel {
+            opacity: 0.04 !important;
+        }
+        
+        [data-theme="dark"] .text-navy-blue {
+            color: #89b4fa !important;
+        }
+        
+        [data-theme="dark"] .text-saffron {
+            color: #fab387 !important;
+        }
+        
+        /* Better button styles in dark mode */
+        [data-theme="dark"] .bg-blue-500 {
+            background-color: #89b4fa !important;
+            color: #11111b !important;
+        }
+        
+        [data-theme="dark"] .bg-blue-500:hover {
+            background-color: #74c7ec !important;
+        }
+        
+        [data-theme="dark"] .bg-india-green,
+        [data-theme="dark"] .bg-green-600,
+        [data-theme="dark"] .bg-green-700 {
+            background-color: #a6e3a1 !important;
+            color: #11111b !important;
+        }
+        
+        [data-theme="dark"] .bg-saffron,
+        [data-theme="dark"] .bg-orange-500,
+        [data-theme="dark"] .bg-orange-600 {
+            background-color: #fab387 !important;
+            color: #11111b !important;
+        }
+        
+        [data-theme="dark"] .bg-red-600 {
+            background-color: #f38ba8 !important;
+            color: #11111b !important;
+        }
+        
+        [data-theme="dark"] .shadow-2xl {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5) !important;
+        }
+        
+        [data-theme="dark"] .shadow-lg {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+        }
+        
+        @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .ashoka-wheel {
+            animation: spin-slow 20s linear infinite;
+        }
+        @keyframes pulse-tricolor {
+            0%, 100% { box-shadow: 0 0 20px rgba(255, 153, 51, 0.5); }
+            33% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); }
+            66% { box-shadow: 0 0 20px rgba(19, 136, 8, 0.5); }
+        }
+        .voice-orb {
+            animation: pulse-tricolor 3s ease-in-out infinite;
+        }
+        @keyframes gradient-shift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .gradient-animate {
+            background-size: 200% 200%;
+            animation: gradient-shift 8s ease infinite;
+        }
+        
+        /* Smooth transitions */
+        body, .bg-white, input, select, textarea {
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+        
+        /* Touch targets */
+        button, .touch-target {
+            min-height: 44px;
+            min-width: 44px;
+        }
+        
+        /* Focus indicators */
+        button:focus, input:focus, select:focus, textarea:focus {
+            outline: 3px solid var(--saffron);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-saffron via-white to-india-green gradient-animate">
+    <!-- Republic Day Banner -->
+    <div class="bg-gradient-to-r from-saffron via-white to-india-green text-navy-blue py-4 shadow-lg relative">
+        <div class="container mx-auto px-4">
+            <!-- Top Controls -->
+            <div class="flex justify-between items-center mb-3">
+                <button id="emergencyBtn" onclick="showEmergencyPhrases()" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-bold text-sm transition transform hover:scale-105 min-h-[44px]" title="Emergency Phrases">
+                    🚨 SOS
+                </button>
+                <div class="flex gap-2">
+                    <button id="darkModeToggle" onclick="toggleDarkMode()" class="bg-white/50 hover:bg-white/70 text-navy-blue px-4 py-2 rounded-lg font-bold text-sm transition min-h-[44px]" title="Toggle Dark Mode">
+                        🌙 Dark
+                    </button>
+                    <button onclick="toggleHistory()" class="bg-white/50 hover:bg-white/70 text-navy-blue px-4 py-2 rounded-lg font-bold text-sm transition min-h-[44px]" title="Translation History">
+                        📜 History
+                    </button>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <h2 class="text-2xl md:text-3xl font-bold flex items-center justify-center gap-3">
+                    <span class="text-3xl">🇮🇳</span>
+                    <span>Celebrating 77th Republic Day 2026</span>
+                    <span class="text-3xl">🇮🇳</span>
+                </h2>
+                <p class="text-sm md:text-base mt-1 font-semibold">Unity in Diversity | विविधता में एकता</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Emergency Phrases Modal -->
+    <div id="emergencyModal" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onclick="hideEmergencyPhrases()">
+        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl max-w-md w-full p-6" onclick="event.stopPropagation()">
+            <h2 class="text-2xl font-bold text-red-600 mb-4 flex items-center gap-2">
+                <span>🚨</span> Emergency Phrases
+            </h2>
+            <div class="space-y-2">
+                <button onclick="setEmergencyPhrase('Help! I need help immediately!')" class="w-full bg-red-600 hover:bg-red-700 text-white px-4 py-3 rounded-lg text-left font-bold transition">
+                    🆘 HELP! / मदद!
+                </button>
+                <button onclick="setEmergencyPhrase('Please call the police')" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg text-left font-bold transition">
+                    👮 Call Police / पुलिस बुलाओ
+                </button>
+                <button onclick="setEmergencyPhrase('I need a doctor or hospital')" class="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded-lg text-left font-bold transition">
+                    🏥 Hospital / अस्पताल
+                </button>
+                <button onclick="setEmergencyPhrase('Where is the nearest hospital?')" class="w-full bg-teal-600 hover:bg-teal-700 text-white px-4 py-3 rounded-lg text-left font-bold transition">
+                    🏥 Nearest Hospital / पास का अस्पताल
+                </button>
+                <button onclick="setEmergencyPhrase('I am lost, please help me')" class="w-full bg-orange-600 hover:bg-orange-700 text-white px-4 py-3 rounded-lg text-left font-bold transition">
+                    🗺️ Lost / मैं खो गया हूँ
+                </button>
+                <button onclick="setEmergencyPhrase('Please call my family')" class="w-full bg-purple-600 hover:bg-purple-700 text-white px-4 py-3 rounded-lg text-left font-bold transition">
+                    📞 Call Family / परिवार को फोन करो
+                </button>
+            </div>
+            <button onclick="hideEmergencyPhrases()" class="w-full mt-4 bg-gray-300 hover:bg-gray-400 text-gray-800 px-4 py-2 rounded-lg font-bold transition">
+                Close
+            </button>
+        </div>
+    </div>
+    
+    <!-- History Sidebar -->
+    <div id="historySidebar" class="hidden fixed right-0 top-0 h-full w-80 bg-white dark:bg-gray-800 shadow-2xl z-40 transform transition-transform duration-300" style="transform: translateX(100%);">
+        <div class="p-6 h-full flex flex-col">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-2xl font-bold text-navy-blue dark:text-white">📜 History</h2>
+                <button onclick="toggleHistory()" class="text-2xl hover:text-red-500 transition">✕</button>
+            </div>
+            
+            <div class="flex gap-2 mb-4">
+                <button id="historyTab" onclick="showHistoryTab()" class="flex-1 px-4 py-2 rounded-lg bg-saffron text-white font-bold">
+                    Recent
+                </button>
+                <button id="favoritesTab" onclick="showFavoritesTab()" class="flex-1 px-4 py-2 rounded-lg bg-gray-200 text-gray-700 font-bold">
+                    ⭐ Favorites
+                </button>
+            </div>
+            
+            <div id="historyContent" class="flex-1 overflow-y-auto space-y-2">
+                <p class="text-gray-500 text-center py-8">No translation history yet</p>
+            </div>
+            
+            <button onclick="clearHistory()" class="mt-4 bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg font-bold transition">
+                🗑️ Clear All History
+            </button>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Main Header -->
+        <div class="bg-white rounded-3xl shadow-2xl p-8 mb-6 text-center relative overflow-hidden">
+            <!-- Ashoka Chakra Background -->
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-10 ashoka-wheel">
+                <svg width="400" height="400" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" stroke="#000080" stroke-width="3" fill="none"/>
+                    <circle cx="50" cy="50" r="10" fill="#000080"/>
+                    <g id="spokes">
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(15 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(30 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(45 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(60 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(75 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(90 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(105 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(120 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(135 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(150 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(165 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(180 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(195 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(210 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(225 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(240 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(255 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(270 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(285 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(300 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(315 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(330 50 50)"/>
+                        <line x1="50" y1="50" x2="50" y2="5" stroke="#000080" stroke-width="2" transform="rotate(345 50 50)"/>
+                    </g>
+                </svg>
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl font-bold bg-gradient-to-r from-saffron via-navy-blue to-india-green bg-clip-text text-transparent mb-3 relative z-10">
+                Bharat Voice Translator
+            </h1>
+            <p class="text-gray-600 text-lg md:text-xl relative z-10">AI-Powered Multilingual Bridge for Bharat 🇮🇳</p>
+            <p class="text-saffron font-semibold mt-2 relative z-10">सत्यमेव जयते | Truth Alone Triumphs</p>
+        </div>
+
+        <!-- AI Voice Assistant - Primary Feature -->
+        <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-8 mb-6">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold bg-gradient-to-r from-saffron via-navy-blue to-india-green bg-clip-text text-transparent mb-4">🎙️ AI Voice Assistant</h2>
+                
+                <!-- AI Configuration -->
+                <div id="aiConfigSection" class="mb-6 p-4 bg-gray-50 rounded-xl">
+                    <div class="flex items-center justify-center gap-3">
+                        <button 
+                            onclick="toggleAiMode()" 
+                            id="aiModeToggle"
+                            class="bg-gray-300 text-gray-700 px-6 py-2 rounded-lg font-bold transition min-h-[44px]">
+                            🤖 AI Mode: OFF
+                        </button>
+                        <span class="text-sm text-green-600 font-semibold">✓ AI Ready</span>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-2">Toggle AI Mode to start natural conversations with the assistant</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 items-start">
+                    <!-- Voice Orb -->
+                    <div class="flex flex-col items-center">
+                        <div id="voiceOrb" class="w-48 h-48 rounded-full bg-gradient-to-br from-saffron via-white to-india-green voice-orb flex items-center justify-center cursor-pointer transform transition hover:scale-110 shadow-2xl" onclick="toggleVoiceAssistant()">
+                            <div class="w-40 h-40 rounded-full bg-white flex items-center justify-center">
+                                <span id="orbIcon" class="text-7xl">🎤</span>
+                            </div>
+                        </div>
+                        <p id="voiceStatus" class="text-gray-600 mt-4 font-semibold text-lg">Click to activate voice commands</p>
+                        
+                        <!-- AI Thinking Indicator -->
+                        <div id="aiThinking" class="hidden mt-4 flex items-center justify-center gap-2 text-blue-500">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                            <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0.2s"></div>
+                            <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0.4s"></div>
+                            <span class="text-sm font-semibold">AI is thinking...</span>
+                        </div>
+                    </div>
+
+                    <!-- Conversation History -->
+                    <div class="text-left">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-bold text-navy-blue">💬 Conversation</h3>
+                            <button 
+                                onclick="clearConversation()" 
+                                class="text-sm bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded-lg transition">
+                                🗑️ Clear
+                            </button>
+                        </div>
+                        
+                        <!-- Chat History Display -->
+                        <div id="chatHistory" class="bg-gray-50 rounded-xl p-4 h-80 overflow-y-auto space-y-3 border-2 border-gray-200">
+                            <div class="text-center text-gray-400 py-8">
+                                <p class="text-sm">💡 <strong>Command Mode</strong>: Fast voice commands</p>
+                                <p class="text-sm mt-2">🤖 <strong>AI Mode</strong>: Natural conversations</p>
+                                <p class="text-xs mt-4 text-gray-500">Configure API key and toggle AI Mode above to start chatting!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-3 text-xs text-gray-500">
+                            <p><strong>Quick Commands:</strong> "translate to Hindi", "swap languages", "copy", "speak", "Jai Hind"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-1 gap-6">
+            <!-- Main Translation Card -->
+            <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-8">
+                <!-- Language Selectors -->
+                <div class="mb-6">
+                    <h2 class="text-2xl font-bold text-navy-blue mb-4 text-center">Select Languages</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">From Language</label>
+                            <select id="sourceLang" class="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-saffron focus:outline-none text-base font-medium">
+                                <option value="auto">🌐 Auto Detect</option>
+                                <option value="en">🇬🇧 English</option>
+                                <option value="hi">🇮🇳 Hindi (हिंदी)</option>
+                                <option value="ta">🇮🇳 Tamil (தமிழ்)</option>
+                                <option value="te">🇮🇳 Telugu (తెలుగు)</option>
+                                <option value="bn">🇮🇳 Bengali (বাংলা)</option>
+                                <option value="mr">🇮🇳 Marathi (मराठी)</option>
+                                <option value="gu">🇮🇳 Gujarati (ગુજરાતી)</option>
+                                <option value="kn">🇮🇳 Kannada (ಕನ್ನಡ)</option>
+                                <option value="ml">🇮🇳 Malayalam (മലയാളം)</option>
+                                <option value="pa">🇮🇳 Punjabi (ਪੰਜਾਬੀ)</option>
+                                <option value="sa">🇮🇳 Sanskrit (संस्कृत)</option>
+                                <option value="ur">🇵🇰 Urdu (اردو)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">To Language</label>
+                            <select id="targetLang" class="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-india-green focus:outline-none text-base font-medium">
+                                <option value="hi">🇮🇳 Hindi (हिंदी)</option>
+                                <option value="en">🇬🇧 English</option>
+                                <option value="ta">🇮🇳 Tamil (தமிழ்)</option>
+                                <option value="te">🇮🇳 Telugu (తెలుగు)</option>
+                                <option value="bn">🇮🇳 Bengali (বাংলা)</option>
+                                <option value="mr">🇮🇳 Marathi (मराठी)</option>
+                                <option value="gu">🇮🇳 Gujarati (ગુજરાતી)</option>
+                                <option value="kn">🇮🇳 Kannada (ಕನ್ನಡ)</option>
+                                <option value="ml">🇮🇳 Malayalam (മലയാളം)</option>
+                                <option value="pa">🇮🇳 Punjabi (ਪੰਜਾਬੀ)</option>
+                                <option value="sa">🇮🇳 Sanskrit (संस्कृत)</option>
+                                <option value="ur">🇵🇰 Urdu (اردو)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swap Button -->
+                <div class="flex justify-center mb-6">
+                    <button onclick="swapLanguages()" class="bg-gradient-to-r from-saffron to-india-green hover:from-orange-600 hover:to-green-700 text-white font-semibold px-6 py-3 rounded-full transition transform hover:scale-105 shadow-lg min-h-[44px]">
+                        🔄 Swap Languages
+                    </button>
+                </div>
+
+                <!-- Text Areas -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Enter Text</label>
+                        <textarea id="sourceText" 
+                                  placeholder="Type, paste, or speak your text..." 
+                                  class="w-full h-48 px-4 py-3 rounded-xl border-2 border-gray-300 focus:border-india-green focus:outline-none resize-none transition"
+                                  oninput="translateText()"></textarea>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="text-sm text-gray-500"><span id="charCount">0</span> characters</span>
+                            <button onclick="startVoiceInput()" id="voiceInputBtn" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition text-sm font-semibold min-h-[44px]">
+                                🎤 Voice Input
+                            </button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <label class="text-sm font-semibold text-gray-700">Translation</label>
+                            <button id="favoriteBtn" onclick="toggleFavorite()" class="text-2xl hover:scale-110 transition transform min-h-[44px] min-w-[44px]" title="Add to Favorites">
+                                ☆
+                            </button>
+                        </div>
+                        <div id="targetText" class="w-full h-48 px-4 py-3 rounded-xl border-2 border-gray-200 bg-gradient-to-br from-gray-50 to-white overflow-y-auto">
+                            <span class="text-gray-400 italic">Translation will appear here...</span>
+                        </div>
+                        <div class="flex gap-2 mt-2">
+                            <button onclick="copyTranslation()" class="flex-1 bg-india-green hover:bg-green-700 text-white px-4 py-2 rounded-lg transition text-sm font-semibold min-h-[44px]">
+                                📋 Copy
+                            </button>
+                            <button onclick="speakTranslation()" class="flex-1 bg-saffron hover:bg-orange-600 text-white px-4 py-2 rounded-lg transition text-sm font-semibold min-h-[44px]">
+                                🔊 Speak
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patriotic Quick Phrases -->
+                <div class="border-t-2 border-gray-200 pt-6 mt-6">
+                    <h3 class="text-lg font-semibold text-gray-700 mb-3">🇮🇳 Quick Phrases</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+                        <button onclick="setQuickPhrase('Jai Hind')" class="bg-gradient-to-r from-saffron to-orange-400 hover:from-orange-600 hover:to-orange-500 text-white px-3 py-2 rounded-lg text-sm transition font-semibold min-h-[44px]">
+                            Jai Hind
+                        </button>
+                        <button onclick="setQuickPhrase('Namaste')" class="bg-gradient-to-r from-india-green to-green-600 hover:from-green-700 hover:to-green-800 text-white px-3 py-2 rounded-lg text-sm transition font-semibold min-h-[44px]">
+                            Namaste
+                        </button>
+                        <button onclick="setQuickPhrase('Thank you')" class="bg-gray-100 hover:bg-gray-200 px-3 py-2 rounded-lg text-sm transition min-h-[44px]">
+                            Thank you
+                        </button>
+                        <button onclick="setQuickPhrase('How much?')" class="bg-gray-100 hover:bg-gray-200 px-3 py-2 rounded-lg text-sm transition min-h-[44px]">
+                            How much?
+                        </button>
+                        <button onclick="setQuickPhrase('Good morning')" class="bg-gray-100 hover:bg-gray-200 px-3 py-2 rounded-lg text-sm transition min-h-[44px]">
+                            Good morning
+                        </button>
+                        <button onclick="setQuickPhrase('Where is?')" class="bg-gray-100 hover:bg-gray-200 px-3 py-2 rounded-lg text-sm transition min-h-[44px]">
+                            Where is?
+                        </button>
+                        <button onclick="setQuickPhrase('I need help')" class="bg-gray-100 hover:bg-gray-200 px-3 py-2 rounded-lg text-sm transition min-h-[44px]">
+                            Need help
+                        </button>
+                        <button onclick="setQuickPhrase('Dhanyavaad')" class="bg-gradient-to-r from-navy-blue to-blue-700 hover:from-blue-800 hover:to-blue-900 text-white px-3 py-2 rounded-lg text-sm transition font-semibold min-h-[44px]">
+                            Dhanyavaad
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Loading & Error -->
+                <div id="loading" class="hidden mt-4 text-center">
+                    <div class="inline-block animate-spin rounded-full h-10 w-10 border-4 border-saffron border-t-india-green"></div>
+                    <p class="text-gray-600 mt-2 font-semibold">Translating...</p>
+                </div>
+                <div id="error" class="hidden mt-4 bg-red-100 border-l-4 border-red-500 text-red-700 px-4 py-3 rounded-lg"></div>
+            </div>
+        </div>
+
+        <!-- Negotiation & Bargaining Tool -->
+        <div class="mt-8 bg-white rounded-3xl shadow-2xl p-6 md:p-8">
+            <h2 class="text-3xl font-bold text-center bg-gradient-to-r from-saffron via-navy-blue to-india-green bg-clip-text text-transparent mb-6">
+                💰 Bargaining Assistant
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Price Calculator -->
+                <div class="bg-gradient-to-br from-saffron/10 to-orange-50 rounded-2xl p-6">
+                    <h3 class="text-xl font-bold text-navy-blue mb-4 flex items-center gap-2">
+                        <span>🧮</span> Price Negotiator
+                    </h3>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Asked Price (₹)</label>
+                            <input type="number" id="askedPrice" placeholder="1000" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-saffron focus:outline-none text-lg" oninput="calculateBargain()">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Discount Goal (%)</label>
+                            <div class="flex gap-2">
+                                <input type="range" id="discountSlider" min="10" max="50" value="30" class="flex-1" oninput="calculateBargain()">
+                                <span id="discountValue" class="text-xl font-bold text-saffron w-16 text-center">30%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-xl p-4 border-2 border-saffron">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm text-gray-600">Your Offer:</span>
+                                <span id="offerPrice" class="text-3xl font-bold text-india-green">₹0</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-gray-600">You Save:</span>
+                                <span id="savedAmount" class="text-xl font-bold text-saffron">₹0</span>
+                            </div>
+                        </div>
+                        
+                        <button onclick="translateBargainPhrase()" class="w-full bg-gradient-to-r from-saffron to-orange-500 hover:from-orange-600 hover:to-orange-700 text-white py-3 rounded-lg font-bold text-lg transition transform hover:scale-105">
+                            🗣️ Say This Offer
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Bargaining Phrases -->
+                <div class="bg-gradient-to-br from-india-green/10 to-green-50 rounded-2xl p-6">
+                    <h3 class="text-xl font-bold text-navy-blue mb-4 flex items-center gap-2">
+                        <span>💬</span> Quick Bargaining Phrases
+                    </h3>
+                    
+                    <!-- Bulk Purchase Calculator -->
+                    <div class="bg-white rounded-xl p-4 mb-4 border-2 border-india-green/30">
+                        <h4 class="font-bold text-navy-blue mb-3 flex items-center gap-2">
+                            <span>📦</span> Bulk Purchase Calculator
+                        </h4>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div>
+                                <label class="text-xs text-gray-600">Price per item (₹)</label>
+                                <input type="number" id="bulkPrice" placeholder="100" class="w-full px-3 py-2 border rounded-lg text-sm" oninput="calculateBulk()">
+                            </div>
+                            <div>
+                                <label class="text-xs text-gray-600">Quantity</label>
+                                <input type="number" id="bulkQty" placeholder="10" class="w-full px-3 py-2 border rounded-lg text-sm" oninput="calculateBulk()">
+                            </div>
+                        </div>
+                        <div class="mt-3 flex justify-between items-center bg-india-green/10 p-2 rounded">
+                            <span class="text-sm font-semibold">Total:</span>
+                            <span id="bulkTotal" class="text-lg font-bold text-india-green">₹0</span>
+                        </div>
+                        <button onclick="translateBulkOffer()" class="w-full mt-2 bg-india-green hover:bg-green-700 text-white py-2 rounded-lg text-sm font-bold transition">
+                            🗣️ Make Bulk Offer
+                        </button>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <button onclick="setBargainPhrase('How much is this?')" class="w-full bg-white hover:bg-gray-50 border-2 border-gray-200 hover:border-saffron px-4 py-3 rounded-lg text-left transition">
+                            <div class="font-semibold text-navy-blue">How much is this?</div>
+                            <div class="text-xs text-gray-500">यह कितने का है?</div>
+                        </button>
+                        
+                        <button onclick="setBargainPhrase('Too expensive! Can you reduce the price?')" class="w-full bg-white hover:bg-gray-50 border-2 border-gray-200 hover:border-saffron px-4 py-3 rounded-lg text-left transition">
+                            <div class="font-semibold text-navy-blue">Too expensive!</div>
+                            <div class="text-xs text-gray-500">बहुत महंगा है!</div>
+                        </button>
+                        
+                        <button onclick="setBargainPhrase('What is your best price?')" class="w-full bg-white hover:bg-gray-50 border-2 border-gray-200 hover:border-saffron px-4 py-3 rounded-lg text-left transition">
+                            <div class="font-semibold text-navy-blue">What is your best price?</div>
+                            <div class="text-xs text-gray-500">आपकी अंतिम कीमत क्या है?</div>
+                        </button>
+                        
+                        <button onclick="setBargainPhrase('I will give you 500 rupees')" class="w-full bg-white hover:bg-gray-50 border-2 border-gray-200 hover:border-saffron px-4 py-3 rounded-lg text-left transition">
+                            <div class="font-semibold text-navy-blue">I'll give you ₹500</div>
+                            <div class="text-xs text-gray-500">मैं 500 रुपये दूंगा</div>
+                        </button>
+                        
+                        <button onclick="setBargainPhrase('Can you give me a discount?')" class="w-full bg-white hover:bg-gray-50 border-2 border-gray-200 hover:border-saffron px-4 py-3 rounded-lg text-left transition">
+                            <div class="font-semibold text-navy-blue">Any discount?</div>
+                            <div class="text-xs text-gray-500">कोई छूट मिलेगी?</div>
+                        </button>
+                        
+                        <button onclick="setBargainPhrase('I will buy 2 pieces, give me good price')" class="w-full bg-white hover:bg-gray-50 border-2 border-gray-200 hover:border-saffron px-4 py-3 rounded-lg text-left transition">
+                            <div class="font-semibold text-navy-blue">Bulk discount?</div>
+                            <div class="text-xs text-gray-500">ज्यादा लेने पर छूट?</div>
+                        </button>
+                        
+                        <button onclick="setBargainPhrase('Okay, deal! I will take it')" class="w-full bg-gradient-to-r from-india-green to-green-600 hover:from-green-700 hover:to-green-800 text-white px-4 py-3 rounded-lg text-left transition font-bold">
+                            <div>✅ Deal Done!</div>
+                            <div class="text-xs opacity-90">ठीक है, लूंगा!</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Market Scenarios -->
+            <div class="mt-6 bg-gradient-to-r from-navy-blue/5 to-purple-50 rounded-2xl p-6">
+                <h3 class="text-xl font-bold text-navy-blue mb-4 text-center">🛍️ Common Market Scenarios</h3>
+                
+                <div class="grid md:grid-cols-3 gap-3">
+                    <button onclick="setScenario('vegetables')" class="bg-white hover:bg-india-green hover:text-white border-2 border-gray-200 hover:border-india-green px-4 py-3 rounded-lg transition font-semibold">
+                        🥬 Vegetables
+                    </button>
+                    <button onclick="setScenario('clothes')" class="bg-white hover:bg-saffron hover:text-white border-2 border-gray-200 hover:border-saffron px-4 py-3 rounded-lg transition font-semibold">
+                        👕 Clothes
+                    </button>
+                    <button onclick="setScenario('electronics')" class="bg-white hover:bg-navy-blue hover:text-white border-2 border-gray-200 hover:border-navy-blue px-4 py-3 rounded-lg transition font-semibold">
+                        📱 Electronics
+                    </button>
+                    <button onclick="setScenario('jewelry')" class="bg-white hover:bg-yellow-500 hover:text-white border-2 border-gray-200 hover:border-yellow-500 px-4 py-3 rounded-lg transition font-semibold">
+                        💍 Jewelry
+                    </button>
+                    <button onclick="setScenario('street-food')" class="bg-white hover:bg-orange-500 hover:text-white border-2 border-gray-200 hover:border-orange-500 px-4 py-3 rounded-lg transition font-semibold">
+                        🍜 Street Food
+                    </button>
+                    <button onclick="setScenario('auto-rickshaw')" class="bg-white hover:bg-green-600 hover:text-white border-2 border-gray-200 hover:border-green-600 px-4 py-3 rounded-lg transition font-semibold">
+                        🛺 Auto/Taxi
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Festival Greetings -->
+        <div class="mt-8 bg-white rounded-3xl shadow-2xl p-6 md:p-8">
+            <h2 class="text-3xl font-bold text-center bg-gradient-to-r from-saffron via-navy-blue to-india-green bg-clip-text text-transparent mb-6">
+                🎉 Festival Greetings
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-4">
+                <button onclick="setFestivalGreeting('diwali')" class="bg-gradient-to-br from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white p-6 rounded-2xl transition transform hover:scale-105 text-left">
+                    <div class="text-4xl mb-2">🪔</div>
+                    <div class="font-bold text-xl">Diwali</div>
+                    <div class="text-sm opacity-90">Happy Diwali! May your life be filled with light</div>
+                </button>
+                
+                <button onclick="setFestivalGreeting('holi')" class="bg-gradient-to-br from-pink-400 to-purple-500 hover:from-pink-500 hover:to-purple-600 text-white p-6 rounded-2xl transition transform hover:scale-105 text-left">
+                    <div class="text-4xl mb-2">🎨</div>
+                    <div class="font-bold text-xl">Holi</div>
+                    <div class="text-sm opacity-90">Happy Holi! May colors of joy fill your life</div>
+                </button>
+                
+                <button onclick="setFestivalGreeting('eid')" class="bg-gradient-to-br from-green-400 to-teal-500 hover:from-green-500 hover:to-teal-600 text-white p-6 rounded-2xl transition transform hover:scale-105 text-left">
+                    <div class="text-4xl mb-2">🌙</div>
+                    <div class="font-bold text-xl">Eid</div>
+                    <div class="text-sm opacity-90">Eid Mubarak! May Allah bless you</div>
+                </button>
+                
+                <button onclick="setFestivalGreeting('pongal')" class="bg-gradient-to-br from-amber-400 to-yellow-600 hover:from-amber-500 hover:to-yellow-700 text-white p-6 rounded-2xl transition transform hover:scale-105 text-left">
+                    <div class="text-4xl mb-2">🌾</div>
+                    <div class="font-bold text-xl">Pongal</div>
+                    <div class="text-sm opacity-90">Happy Pongal! May harvest bring prosperity</div>
+                </button>
+                
+                <button onclick="setFestivalGreeting('navratri')" class="bg-gradient-to-br from-red-400 to-pink-500 hover:from-red-500 hover:to-pink-600 text-white p-6 rounded-2xl transition transform hover:scale-105 text-left">
+                    <div class="text-4xl mb-2">💃</div>
+                    <div class="font-bold text-xl">Navratri</div>
+                    <div class="text-sm opacity-90">Happy Navratri! May Goddess Durga bless you</div>
+                </button>
+                
+                <button onclick="setFestivalGreeting('christmas')" class="bg-gradient-to-br from-red-500 to-green-600 hover:from-red-600 hover:to-green-700 text-white p-6 rounded-2xl transition transform hover:scale-105 text-left">
+                    <div class="text-4xl mb-2">🎄</div>
+                    <div class="font-bold text-xl">Christmas</div>
+                    <div class="text-sm opacity-90">Merry Christmas! May joy be with you</div>
+                </button>
+                
+                <button onclick="setFestivalGreeting('independence')" class="bg-gradient-to-br from-saffron via-white to-india-green text-navy-blue p-6 rounded-2xl transition transform hover:scale-105 text-left border-2 border-saffron">
+                    <div class="text-4xl mb-2">🇮🇳</div>
+                    <div class="font-bold text-xl">Independence Day</div>
+                    <div class="text-sm">Jai Hind! Celebrating 15th August</div>
+                </button>
+                
+                <button onclick="setFestivalGreeting('republic')" class="bg-gradient-to-br from-navy-blue to-blue-700 hover:from-blue-800 hover:to-blue-900 text-white p-6 rounded-2xl transition transform hover:scale-105 text-left">
+                    <div class="text-4xl mb-2">🇮🇳</div>
+                    <div class="font-bold text-xl">Republic Day</div>
+                    <div class="text-sm opacity-90">Happy Republic Day! 26th January</div>
+                </button>
+                
+                <button onclick="setFestivalGreeting('ganesh')" class="bg-gradient-to-br from-orange-400 to-red-500 hover:from-orange-500 hover:to-red-600 text-white p-6 rounded-2xl transition transform hover:scale-105 text-left">
+                    <div class="text-4xl mb-2">🐘</div>
+                    <div class="font-bold text-xl">Ganesh Chaturthi</div>
+                    <div class="text-sm opacity-90">Ganpati Bappa Morya!</div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center mt-8 text-navy-blue">
+            <p class="text-lg font-semibold">🇮🇳 Empowering India's local markets with AI</p>
+            <p class="text-sm mt-2 opacity-75">Celebrating linguistic diversity and unity of Bharat</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="openrouter-service.js"></script>
+    <script src="conversation-ui.js"></script>
+    <script src="voice-assistant.js"></script>
+</body>
+</html>
